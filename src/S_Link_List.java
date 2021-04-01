@@ -44,7 +44,9 @@ private    int count=0;
         }
         return false;
     }
-    
+         /**
+        * It will insert passed element at the specified index in the List.
+ */
     public boolean add(int index,int a){
         Node n=new Node(a);
         if(index<count){
