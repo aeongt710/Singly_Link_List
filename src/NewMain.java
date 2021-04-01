@@ -21,7 +21,7 @@ public class NewMain {
         l.add(33);
         l.add(44);
         l.add(55);
-        
+        l.add(0,99);
         System.out.println(l.print());
 //        System.out.println("==========="+l.size());
 //        System.out.println(l.printReverse());

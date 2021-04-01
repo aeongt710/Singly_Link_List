@@ -45,6 +45,33 @@ private    int count=0;
         return false;
     }
     
+    public boolean add(int index,int a){
+        Node n=new Node(a);
+        if(index<count){
+            Node temp=head;
+            int c=0;
+            while(temp!=null){
+                if(index==0){
+                    n.next=head;
+                    head=n;
+                    count++;
+                    return true;
+                }
+                if(c+1==index){
+                    n.next=temp.next;
+                    temp.next=n;
+                    count++;
+                    return true;
+                }else{
+                    c++;
+                    temp=temp.next;
+                }
+            }
+        }
+        return false;
+        
+    }
+    
 /**
         * It will remove the first occurrence of the passed element from the List.
  */
